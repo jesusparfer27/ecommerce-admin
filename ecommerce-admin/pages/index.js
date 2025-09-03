@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
-import { useSession } from "next-auth/react"
+import { useSession, signIn } from "next-auth/react"
+
 
 export default function Home() {
 
