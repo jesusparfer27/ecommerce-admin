@@ -9,7 +9,7 @@ if (!uri) {
 const options = {};
 
 let client;
-let clientPromise; 
+let clientPromise;  
 
 if (process.env.NODE_ENV === "development") { 
   if (!global._mongoClientPromise) {
