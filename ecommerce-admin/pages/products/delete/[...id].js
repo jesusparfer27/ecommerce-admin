@@ -21,20 +21,19 @@ export default function DeleteProductPage() {
     }
 
     async function deleteProduct() {
-        await axios.delete('/api/products?id='+id)
+        await axios.delete('/api/products?id=' + id)
         goBack()
     }
 
     return (
         <Layout>
-            <h1 className="text-center">Do you really want to delete
-                &nbsp;
-                "{productInfo?.title}"?
+            <h1 className="text-center">
+                Do you really want to delete&nbsp;&quot;{productInfo?.title}&quot;?
             </h1>
             <div className="flex gap-2 justify-center">
                 <button
-                onClick={deleteProduct}
-                 className="btn-red">
+                    onClick={deleteProduct}
+                    className="btn-red">
                     Yes
                 </button>
                 <button className="btn-default"
