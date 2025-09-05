@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
-import clientPromise from "@/lib/mongodb";
+// import clientPromise from "@/lib/mongodb";
 import mongoose from "mongoose";
 import {mongooseConnect} from "../../lib/mongoose";
 import {Product} from "../../models/Product";
