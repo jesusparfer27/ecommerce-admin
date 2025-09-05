@@ -167,7 +167,7 @@ export default function ProductForm({
                     setList={updateImagesOrder}
                 >
                     {!!images?.length && images.map(img => (
-                        <div key={img.id} className="h-24">
+                        <div key={img.id} className="h-24 bg-white p-4 shadow-sm rounded-sm border border-gray-200">
                             <img src={img.src} alt="Product Image" className="rounded-lg" />
                         </div>
                     ))}
@@ -177,7 +177,7 @@ export default function ProductForm({
                         <Spinner />
                     </div>
                 )}
-                <label className="inline-block w-24 h-24 cursor-pointer text-center flex items-center justify-center text-sm gap-1 text-gray-500 rounded-lg bg-gray-200">
+                <label className="w-24 h-24 cursor-pointer text-center flex flex-col items-center justify-center text-sm gap-1 text-gray-500 rounded-sm bg-white shadow-sm border border-gray-200">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
@@ -185,14 +185,14 @@ export default function ProductForm({
                         className="w-6 h-6">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5m-13.5-9L12 3m0 0 4.5 4.5M12 3v13.5" />
                     </svg>
-                   <label htmlFor="fileInput" className="inline-block ...">Upload</label>
-<input
-  id="fileInput"
-  type="file"
-  multiple
-  onChange={uploadImages}
-  className="hidden"
-/>
+                    <label htmlFor="fileInput" className="inline-block ...">Add Images</label>
+                    <input
+                        id="fileInput"
+                        type="file"
+                        multiple
+                        onChange={uploadImages}
+                        className="hidden"
+                    />
 
                 </label>
             </div>
